@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-// កែប្រែ៖ ប្តូរពី Telegram ទៅជា Send
-import { Instagram, Youtube, Send, Facebook, Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, MapPin, Send } from 'lucide-react'; // Import ពួក Contact Icons
+import { FaFacebook, FaInstagram, FaYoutube, FaTwitter } from 'react-icons/fa'; // Import ពួក Social Icons
 
 const translations = {
   en: {
@@ -60,21 +60,20 @@ const Footer = ({ language = 'en' }) => {
   ];
 
   const socialLinks = [
-    { icon: Instagram, url: 'https://instagram.com', label: 'Instagram' },
-    { icon: Youtube, url: 'https://youtube.com/@kravanpictures?si=hgETpEdDsqb-msaa', label: 'YouTube' },
-    // កែប្រែ៖ ប្រើប្រាស់ Send icon ជំនួសឱ្យ Telegram icon
+    { icon: FaInstagram, url: 'https://instagram.com', label: 'Instagram' },
+    { icon: FaYoutube, url: 'https://youtube.com/@kravanpictures?si=hgETpEdDsqb-msaa', label: 'YouTube' },
     { icon: Send, url: 'https://t.me/sengthykh', label: 'Telegram' },
-    { icon: Facebook, url: 'https://www.facebook.com/share/1L9s8oZ1n5/?mibextid=wwXIfr', label: 'Facebook' }
+    { icon: FaFacebook, url: 'https://www.facebook.com/share/1L9s8oZ1n5/?mibextid=wwXIfr', label: 'Facebook' }
   ];
 
   return (
-    <footer className="bg-dark text-gray-300">
-      <div className="container-custom section-padding">
+    <footer className="bg-[#0f1423] text-gray-300">
+      <div className="container-custom py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div>
             <h3 className="text-2xl font-bold text-white mb-4">
-              <span className="text-primary">Kravan</span> Pictures
+              <span className="text-yellow-500">Kravan</span> Pictures
             </h3>
             <p className="text-gray-400 mb-6">
               {t.tagline}
@@ -86,7 +85,7 @@ const Footer = ({ language = 'en' }) => {
                   href={social.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2 bg-gray-800 rounded-lg hover:bg-primary transition-all hover:scale-110"
+                  className="p-2 bg-gray-800 rounded-lg hover:bg-yellow-500 hover:text-black transition-all hover:scale-110"
                   aria-label={social.label}
                 >
                   <social.icon size={20} />
@@ -101,10 +100,7 @@ const Footer = ({ language = 'en' }) => {
             <ul className="space-y-3">
               {companyLinks.map((link) => (
                 <li key={link.label}>
-                  <Link
-                    to={link.path}
-                    className="hover:text-primary transition-colors"
-                  >
+                  <Link to={link.path} className="hover:text-yellow-500 transition-colors">
                     {link.label}
                   </Link>
                 </li>
@@ -118,10 +114,7 @@ const Footer = ({ language = 'en' }) => {
             <ul className="space-y-3">
               {serviceLinks.map((link) => (
                 <li key={link.label}>
-                  <Link
-                    to={link.path}
-                    className="hover:text-primary transition-colors"
-                  >
+                  <Link to={link.path} className="hover:text-yellow-500 transition-colors">
                     {link.label}
                   </Link>
                 </li>
@@ -134,19 +127,19 @@ const Footer = ({ language = 'en' }) => {
             <h4 className="text-white font-semibold text-lg mb-4">{t.contact}</h4>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <Mail size={20} className="text-primary mt-1 flex-shrink-0" />
-                <a href={`mailto:${t.email}`} className="hover:text-primary transition-colors">
+                <Mail size={20} className="text-yellow-500 mt-1 flex-shrink-0" />
+                <a href={`mailto:${t.email}`} className="hover:text-yellow-500 transition-colors">
                   {t.email}
                 </a>
               </li>
               <li className="flex items-start gap-3">
-                <Phone size={20} className="text-primary mt-1 flex-shrink-0" />
-                <a href={`tel:${t.phone}`} className="hover:text-primary transition-colors">
+                <Phone size={20} className="text-yellow-500 mt-1 flex-shrink-0" />
+                <a href={`tel:${t.phone}`} className="hover:text-yellow-500 transition-colors">
                   {t.phone}
                 </a>
               </li>
               <li className="flex items-start gap-3">
-                <MapPin size={20} className="text-primary mt-1 flex-shrink-0" />
+                <MapPin size={20} className="text-yellow-500 mt-1 flex-shrink-0" />
                 <span>{t.address}</span>
               </li>
             </ul>
