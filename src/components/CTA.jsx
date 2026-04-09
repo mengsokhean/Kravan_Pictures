@@ -1,20 +1,22 @@
-import { Link } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
+import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
 
 const translations = {
   en: {
-    title: 'Ready to Bring Your Story to Life?',
-    description: "Let's collaborate to turn your vision into a compelling cinematic experience.",
-    contact: 'Contact Our Team'
+    title: "Ready to Bring Your Story to Life?",
+    description:
+      "Let's collaborate to turn your vision into a compelling cinematic experience.",
+    contact: "Contact Our Team",
   },
   km: {
-    title: 'តើអ្នកត្រៀមខ្លួនរួចហើយឬនៅក្នុងការធ្វើឱ្យរឿងរបស់អ្នករស់ឡើងវិញ?',
-    description: 'សូមរួមគ្នាដើម្បីប្រែក្លាយចក្ខុវិស័យរបស់អ្នកទៅជាបទពិសោធន៍ភាពយន្តដ៏ទាក់ទាញ។',
-    contact: 'ទាក់ទងក្រុមរបស់យើង'
-  }
+    title: "តើអ្នកត្រៀមខ្លួនរួចហើយឬនៅក្នុងការធ្វើឱ្យរឿងរបស់អ្នករស់ឡើងវិញ?",
+    description:
+      "សូមរួមគ្នាដើម្បីប្រែក្លាយចក្ខុវិស័យរបស់អ្នកទៅជាបទពិសោធន៍ភាពយន្តដ៏ទាក់ទាញ។",
+    contact: "ទាក់ទងក្រុមរបស់យើង",
+  },
 };
 
-const CTA = ({ language = 'en' }) => {
+const CTA = ({ language = "en" }) => {
   const t = translations[language];
 
   return (

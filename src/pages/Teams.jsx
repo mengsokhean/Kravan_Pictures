@@ -47,7 +47,7 @@ const teamMembers = [
     name: 'Seyha',
     nameKm: 'សីហា',
     role: 'content', // កែសម្រួលឱ្យត្រូវជាមួយ key ក្នុង translations
-    image: 'https://cdn2.cdnstep.com/UpriYgG5U6e2d86TVpI9/13-1.png',
+    image: 'https://scontent.fpnh2-2.fna.fbcdn.net/v/t39.30808-6/483107497_984350117093274_6319129271639617105_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=53a332&_nc_eui2=AeH8MDrFQV6Hl4srigszjzsBKSwONnXWLjkpLA42ddYuOY6YGbD6Mrz8GHtkxZzu-iJ6gMM8a4oOzKazTGrNvO8o&_nc_ohc=3PkWtrEhQmsQ7kNvwFmkEQe&_nc_oc=AdquUjklCVQ8wSgBKI8aOm39AmoiYbOx7iCsqX8wMOOy4LAev8ovboaL_ATdSimBf3M&_nc_zt=23&_nc_ht=scontent.fpnh2-2.fna&_nc_gid=qB7XKwYvF2KW8AAN61t2Yw&_nc_ss=7a32e&oh=00_Afx3D4mlnOQ7yvtZqpsTRh3Tow27U_UC6O9ofFmAeNM2lA&oe=69CAAE01',
     social: { instagram: '#', linkedin: '#', twitter: '#' }
   },
   {
@@ -55,7 +55,7 @@ const teamMembers = [
     name: 'Sok Heng',
     nameKm: 'សុខ ហេង',
     role: 'video_editor', // កែសម្រួលឱ្យត្រូវជាមួយ key ក្នុង translations
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80', // បងប្តូររូបភាពសិន ព្រោះ data:image ប្អូនវែងពេកអាចបង្ក error
+    image: 'https://scontent.fpnh2-3.fna.fbcdn.net/v/t39.30808-1/630488653_1583818432915109_2603350441158142021_n.jpg?stp=cp6_dst-jpg_s480x480_tt6&_nc_cat=108&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeG1OkgTRhWT8ohxHcrhTj_T2qT6G_WCdVXapPob9YJ1Ve84P6Sa56CjcGDVzng0u6zriw4thsss3WoR2WXYF-RB&_nc_ohc=4QjoleA3VvIQ7kNvwHHbfE2&_nc_oc=Adonep-KBeJVRSlr-_PciaFp8dNYIXckaSxkhqoMsZK9_dTWsG7jUE9pBpdekceNhQU&_nc_zt=24&_nc_ht=scontent.fpnh2-3.fna&_nc_gid=2oz1Pn-ZP-K448UFaAALhw&_nc_ss=7a32e&oh=00_AfzvZPmtY9QfQnSjfbuBrXTWG8sCA-j4E81uRohL5ijZWg&oe=69CABD8A', // បងប្តូររូបភាពសិន ព្រោះ data:image ប្អូនវែងពេកអាចបង្ក error
     social: { instagram: '#', linkedin: '#', twitter: '#' }
   },
   {
@@ -63,23 +63,23 @@ const teamMembers = [
     name: 'Joheng Liebert',
     nameKm: 'យ៉៉ូហេង​ លីបើត',
     role: 'editor',
-    image: 'https://wallpapercave.com/wp/wp11662056.jpg',
+    image: 'https://p16-sign-sg.tiktokcdn.com/tos-alisg-avt-0068/348bc336550331340fb9c3a8f8f87218~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=14579&refresh_token=9a507cac&x-expires=1774684800&x-signature=TDeq1YfrAiGLVFlBErc7DbF7ZMc%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my3',
     social: { instagram: '#', linkedin: '#', twitter: '#' }
   },
   {
     id: 5,
-    name: 'David Park',
-    nameKm: 'ដេវីដ ប៉ាក',
+    name: 'Sey Hak',
+    nameKm: 'សីហាក់',
     role: 'sound',
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcdA7Yr9Cz_Qgg4xUONxP5i4Yhz8TEgy9D_g&s',
+    image: 'https://static.vecteezy.com/system/resources/previews/046/409/821/non_2x/avatar-profile-icon-in-flat-style-male-user-profile-illustration-on-isolated-background-man-profile-sign-business-concept-vector.jpg',
     social: { instagram: '#', linkedin: '#', twitter: '#' }
   },
   {
     id: 6,
-    name: 'Lisa Thompson',
-    nameKm: 'លីសា តុមសុន',
+    name: 'Ly Ammara',
+    nameKm: 'អមរា',
     role: 'production',
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpN8v-immOlOUBeQuLPCxlUMIoOB10kfO4gA&s',
+    image: 'https://img.freepik.com/premium-vector/cute-woman-avatar-profile-vector-illustration_1058532-14592.jpg?w=360',
     social: { instagram: '#', linkedin: '#', twitter: '#' }
   }
 ];

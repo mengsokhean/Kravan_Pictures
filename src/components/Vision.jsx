@@ -30,9 +30,9 @@ const Vision = ({ language = 'en' }) => {
   const t = translations[language];
 
   const stats = [
-    { icon: Film, value: '150+', label: t.stats.projects },
-    { icon: Users, value: '50+', label: t.stats.team },
-    { icon: Award, value: '25+', label: t.stats.awards }
+    { icon: Film, value: '2+', label: t.stats.projects },
+    { icon: Users, value: '5+', label: t.stats.team },
+    { icon: Award, value: '2+', label: t.stats.awards }
   ];
 
   return (

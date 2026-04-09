@@ -4,6 +4,8 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
+// បន្ថែមការ Import ProjectDetail នៅទីនេះ
+import ProjectDetail from './pages/ProjectDetail'; 
 import Teams from './pages/Teams';
 import Development from './pages/Development';
 import Services from './pages/Services';
@@ -42,21 +44,27 @@ function App() {
 
   return (
     <Router>
-      <div className={`min-h-screen font-transition ${language === 'km' ? 'font-khmer' : 'font-sans'}`}>
+      <div className={`min-h-screen font-transition ${language === 'km' ? 'font-khmer' : 'font-sans'} bg-white dark:bg-dark text-gray-900 dark:text-white`}>
         <Navbar 
           theme={theme} 
           toggleTheme={toggleTheme} 
           language={language}
           toggleLanguage={toggleLanguage}
         />
-        <Routes>
-          <Route path="/" element={<Home language={language} />} />
-          <Route path="/projects" element={<Projects language={language} />} />
-          <Route path="/teams" element={<Teams language={language} />} />
-          <Route path="/development" element={<Development language={language} />} />
-          <Route path="/services" element={<Services language={language} />} />
-          <Route path="/contact" element={<Contact language={language} />} />
-        </Routes>
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Home language={language} />} />
+            <Route path="/projects" element={<Projects language={language} />} />
+            
+            {/* នេះគឺជា Route ថ្មីសម្រាប់ទំព័រលម្អិតរបស់គម្រោងនីមួយៗ */}
+            <Route path="/projects/:id" element={<ProjectDetail language={language} />} />
+            
+            <Route path="/teams" element={<Teams language={language} />} />
+            <Route path="/development" element={<Development language={language} />} />
+            <Route path="/services" element={<Services language={language} />} />
+            <Route path="/contact" element={<Contact language={language} />} />
+          </Routes>
+        </main>
         <Footer language={language} />
       </div>
     </Router>

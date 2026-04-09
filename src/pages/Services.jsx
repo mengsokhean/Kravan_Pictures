@@ -37,7 +37,7 @@ const translations = {
       },
       {
         icon: Info, // កែពី Lightbulb មក Info
-        title: 'Consultancy',
+        title: 'Film Management / IP',
         description: 'Professional advice to refine your cinematic vision and strategy.',
         features: ['Story Doctoring', 'Production Budgeting', 'Technical Planning', 'Marketing Advice']
       },

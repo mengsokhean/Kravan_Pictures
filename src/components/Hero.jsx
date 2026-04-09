@@ -1,22 +1,24 @@
-import { Link } from 'react-router-dom';
-import { Play } from 'lucide-react';
+import { Link } from "react-router-dom";
+import { Play } from "lucide-react";
 
 const translations = {
   en: {
-    title: 'Kravan Pictures',
-    subtitle: 'Award-winning film production studio dedicated to creating dramatic experiences that inspire and captivate audiences worldwide.',
-    watchShowreel: 'Watch Showreel',
-    viewProjects: 'View Projects'
+    title: "Kravan Pictures",
+    subtitle:
+      "Award-winning film production studio dedicated to creating dramatic experiences that inspire and captivate audiences worldwide.",
+    watchShowreel: "Watch Showreel",
+    viewProjects: "View Projects",
   },
   km: {
-    title: 'ក្រវ៉ាន់ ភីកឆើរ',
-    subtitle: 'ស្ទូឌីយោផលិតភាពយន្តដែលឈ្នះពានរង្វាន់ ឧស្សាហ៍ប្តេជ្ញាបង្កើតបទពិសោធន៍ដ៏ទាក់ទាញ ដែលបំផុសគំនិត និងទាក់ទាញទស្សនិកជនទូទាំងពិភពលោក។',
-    watchShowreel: 'មើលវីដេអូ',
-    viewProjects: 'មើលគម្រោង'
-  }
+    title: "ក្រវ៉ាន់ ភីកឆើរ",
+    subtitle:
+      "ស្ទូឌីយោផលិតភាពយន្តដែលឈ្នះពានរង្វាន់ ឧស្សាហ៍ប្តេជ្ញាបង្កើតបទពិសោធន៍ដ៏ទាក់ទាញ ដែលបំផុសគំនិត និងទាក់ទាញទស្សនិកជនទូទាំងពិភពលោក។",
+    watchShowreel: "មើលវីដេអូ",
+    viewProjects: "មើលគម្រោង",
+  },
 };
 
-const Hero = ({ language = 'en' }) => {
+const Hero = ({ language = "en" }) => {
   const t = translations[language];
 
   return (
@@ -33,15 +35,25 @@ const Hero = ({ language = 'en' }) => {
 
       {/* Content */}
       <div className="relative z-10 container-custom text-center px-4 py-32 mt-20">
-        <h1 className="heading-xl text-white animate-fade-in">
-          {t.title}
-        </h1>
+        <h1 className="heading-xl text-white animate-fade-in">{t.title}</h1>
         <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-12 animate-slide-up">
           {t.subtitle}
         </p>
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center animate-slide-up">
-          <button className="btn-primary flex items-center gap-2 group">
-            <Play size={20} className="group-hover:scale-110 transition-transform" />
+          <button
+            onClick={() =>
+              window.open(
+                "https://youtu.be/yMeWOePqmI8?si=HggqxmlaX_ljmDsB",
+                "_blank",
+                "noopener,noreferrer",
+              )
+            }
+            className="btn-primary flex items-center gap-2 group"
+          >
+            <Play
+              size={20}
+              className="group-hover:scale-110 transition-transform"
+            />
             {t.watchShowreel}
           </button>
           <Link to="/projects" className="btn-secondary">
