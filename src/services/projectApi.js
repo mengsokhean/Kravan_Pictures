@@ -145,3 +145,9 @@ export const deleteProducerItem = async (id) => {
   const res = await api.delete(`/admin/producers/${id}`);
   return res.data;
 };
+// Keep Render awake — ping every 14 minutes
+const keepAlive = () => {
+  fetch('https://kravan-api-1.onrender.com/api/projects')
+    .catch(() => {});
+};
+setInterval(keepAlive, 14 * 60 * 1000); // 14 minutes
