@@ -18,7 +18,7 @@ const translations = {
     },
     info: {
       title: "Contact Information",
-      email: "info Admin@kravanpictures.com",
+      email: "info seng.thykh@gmail.com",
       phone: "+855 010 771 969",
       address: "Phnom Penh, Cambodia",
       hours: "Office Hours",

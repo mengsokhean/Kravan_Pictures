@@ -10,6 +10,7 @@ import Teams from './pages/Teams';
 import Development from './pages/Development';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
+import AdminDashboard from './pages/AdminDashboard';
 
 function App() {
   const [theme, setTheme] = useState(() => {
@@ -57,12 +58,13 @@ function App() {
             <Route path="/projects" element={<Projects language={language} />} />
             
             {/* នេះគឺជា Route ថ្មីសម្រាប់ទំព័រលម្អិតរបស់គម្រោងនីមួយៗ */}
-            <Route path="/projects/:id" element={<ProjectDetail language={language} />} />
+           <Route path="/projects/:slug" element={<ProjectDetail language={language} />} />
             
             <Route path="/teams" element={<Teams language={language} />} />
             <Route path="/development" element={<Development language={language} />} />
             <Route path="/services" element={<Services language={language} />} />
             <Route path="/contact" element={<Contact language={language} />} />
+            <Route path="/admin" element={<AdminDashboard />} />
           </Routes>
         </main>
         <Footer language={language} />

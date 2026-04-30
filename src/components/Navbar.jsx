@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 import { Moon, Sun, Menu, X, Languages } from "lucide-react";
-
+import logo from "../assets/logo.png";
 // កែប្រែ Path ត្រង់នេះ៖ ប្រើ ../assets/ ប្រសិនបើ Navbar.jsx នៅក្នុង src/components/
 
 const translations = {
@@ -48,7 +48,7 @@ const Navbar = ({ theme, toggleTheme, language, toggleLanguage }) => {
           {/* Logo Section */}
           <Link to="/" className="flex items-center space-x-3 group">
             <img
-              src="https://scontent.fpnh2-1.fna.fbcdn.net/v/t39.30808-1/643822446_1517160817085798_5282556821596933813_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=110&ccb=1-7&_nc_sid=2d3e12&_nc_eui2=AeGrjq10Zn0a9AmxbrZ3y-TdQbUQfz0LIEhBtRB_PQsgSK9_8z8tEd4mFprNyRlxrHdlFswjS2liNrJkNw4fwcH8&_nc_ohc=q7UZTpSdAYEQ7kNvwFI51Gw&_nc_oc=AdqPYuxSPomBXUpSOWvDPx_VtGlvSrKTlEv-lpmLeuzJjaMynX1stMkv-v5pNeUP3vA&_nc_zt=24&_nc_ht=scontent.fpnh2-1.fna&_nc_gid=TdgJUj0J9yAY36ukk0hFFQ&_nc_ss=7a3a8&oh=00_Af0suWVhvqbiNhcM0peeDIS368YAjhlEW4TB4NO8mlWC9Q&oe=69D90A07" /* កែត្រង់នេះ */
+              src={logo}
               alt="Kravan Pictures Logo"
               className="w-12 h-12 md:w-16 md:h-16 object-contain rounded-full border-2 border-primary/20 group-hover:border-primary transition-all"
             />
