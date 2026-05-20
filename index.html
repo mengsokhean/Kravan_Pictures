@@ -2,19 +2,20 @@
 <html lang="km">
   <head>
     <meta charset="UTF-8" />
-    
+
     <link rel="icon" type="image/png" href="/favicon.png" />
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
- <meta
-  http-equiv="Content-Security-Policy"
-  content="default-src 'self'; 
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; 
                script-src 'self' 'unsafe-inline' 'unsafe-eval'; 
                style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; 
                font-src 'self' https://fonts.gstatic.com; 
                img-src 'self' data: blob: https: http:; 
                connect-src 'self' 
+                 https://kravan-api.fly.dev
                  https://kravan-api.onrender.com 
                  https://kravan-api-1.onrender.com
                  http://localhost:8000 
@@ -23,7 +24,7 @@
                  https://api.telegram.org 
                  https://accounts.google.com 
                  https://www.googleapis.com;"
-/>
+    />
     <title>Kravan Pictures - Award-Winning Film Production</title>
 
     <style>
@@ -35,7 +36,7 @@
         box-sizing: border-box;
       }
     </style>
-</head>
+  </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>

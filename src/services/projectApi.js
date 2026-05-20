@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // ── Base URL of Laravel backend ──────────────────────────
-const API_BASE = "https://kravan-api.onrender.com/api";
+const API_BASE = "https://kravan-api.fly.dev/api";
 
 // ── Create axios instance ─────────────────────────────────
 const api = axios.create({
@@ -147,7 +147,6 @@ export const deleteProducerItem = async (id) => {
 };
 // Keep Render awake — ping every 14 minutes
 const keepAlive = () => {
-  fetch('https://kravan-api-1.onrender.com/api/projects')
-    .catch(() => {});
+  fetch("https://kravan-api.fly.dev").catch(() => {});
 };
 setInterval(keepAlive, 14 * 60 * 1000); // 14 minutes
