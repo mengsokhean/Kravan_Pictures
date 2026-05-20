@@ -1,7 +1,8 @@
 import axios from "axios";
 
 // ── Base URL of Laravel backend ──────────────────────────
-const API_BASE = "https://kravan-api.fly.dev/api";
+const API_BASE =
+  import.meta.env.VITE_API_URL || "https://kravan-api.fly.dev/api";
 
 // ── Create axios instance ─────────────────────────────────
 const api = axios.create({
